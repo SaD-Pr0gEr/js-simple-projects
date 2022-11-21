@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicker {
+    display: inline-flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.clicker__button_add,
+.clicker__button_remove {
+    border-radius: 50%;
+    color: black;
+    flex: 0 0 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker__click_count {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+}
