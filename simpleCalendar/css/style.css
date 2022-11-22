@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(169, 235, 255);
+}
+
+.custom_calendar__calendar_object {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(169, 235, 255);
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+}
+
+.calendar_object__month {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.calendar_object__day {
+    font-size: 150px;
+}
+
+
+.frame-1 {
+    background-color: rgb(122, 213, 240);
+    height: 50px;
+    width: inherit;
+    border-radius: 30px 30px 0 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.subframes {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.subframes__sub_frame-1,
+.subframes__sub_frame-2,
+.subframes__sub_frame-3 {
+    background-color: rgb(169, 235, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.custom_calendar {
+    width: 400px;
+    margin: 0 auto;
+}
