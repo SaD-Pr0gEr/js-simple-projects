@@ -1,0 +1,21 @@
+.randomizer-drum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.arrow-down {
+    font-size: 40px;
+}
+
+
+.drum {
+    width: 567px;
+    height: 567px;
+    border-radius: 9999px;
+    background-image: url("http://polechudes.tv/images/baraban.png");
+    transition: 5s;
+    transition-timing-function: ease-in-out;
+}

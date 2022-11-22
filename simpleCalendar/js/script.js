@@ -59,14 +59,22 @@ function parseCalendar(dateTime) {
 
 
 let jsonDateTime = new Date().toJSON();
-let year, month, day;
-[year, month, day] = parseCalendar(jsonDateTime)
-calendarMonthObject = document.getElementsByClassName("calendar_object__month")[0]
-calendarDayObject = document.getElementsByClassName("calendar_object__day")[0]
-calendarMonthObject.innerHTML = months[month]
-calendarDayObject.innerHTML = day
 
+function configureWatches() {
+    let year, month, day;
+    [year, month, day] = parseCalendar(jsonDateTime)
+    let calendarMonthObjects = document.getElementsByClassName("calendar_object__month")
+    let calendarDayObjects = document.getElementsByClassName("calendar_object__day")
+    for (let calendarMonthObject = 0; calendarMonthObject < calendarMonthObjects.length; calendarMonthObject++) {
+        calendarMonthObjects[calendarMonthObject].innerHTML = months[month]
+    }
 
+    for (let calendarDayObject = 0; calendarDayObject < calendarDayObjects.length; calendarDayObject++) {
+        calendarDayObjects[calendarDayObject].innerHTML = day
+    }
+}
+
+configureWatches()
 // let jsonDateTime = new Date().toJSON();
 // let year, month, day;
 // [year, month, day] = parseCalendar(jsonDateTime)
