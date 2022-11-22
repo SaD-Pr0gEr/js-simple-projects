@@ -1,0 +1,29 @@
+body {
+    background-color: #0b090e;
+}
+
+.watch {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    color: #b6ccec;
+    border: solid #a799f8;
+    box-shadow: 0 0 50px #a799f8;
+}
+
+
+.watch__hour,
+.watch__minute,
+.watch__second,
+.watch-frames {
+    padding: 25px;
+    font-size: 50px;
+    text-shadow: 0 0 50px #a799f8;
+}
+
+.watch-frames {
+    font-weight: bold;
+    font-size: 30px;
+}
