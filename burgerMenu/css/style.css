@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Arial", sans-serif;
+}
+
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: white;
+    background-color: rebeccapurple;
+    position: fixed;
+    height: 30px;
+    width: 95%;
+    left: 0;
+    top: 0;
+}
+
+.header__nav a {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 20px;
+}
+
+.header__nav a:hover {
+    color: white;
+}
+
+.news {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.news-card {
+    width: 45%;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #b6ccec;
+}
+
+.news-card__head {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #b6ccec;
+}
+
+.news-card__title {
+    margin-top: 10px;
+}
+
+.burger,
+.burger.toggle,
+.close {
+    display: none;
+}
+
+.header-adaptive.toggle {
+    right: 0;
+}
+
+.header-adaptive {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 95%;
+    top: 70px;
+    right: -100%;
+    transition: all .5s ease;
+    background-color: rebeccapurple;
+    overflow: scroll;
+}
+
+.close.toggle {
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: all .3s;
+}
+
+.burger__item {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.header-adaptive__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-adaptive__nav a {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px 5px;
+        width: 99%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .header {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}
